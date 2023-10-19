@@ -1,0 +1,759 @@
+body {
+  margin: auto;
+  font-family: Raleway;
+  max-width: 1440px;
+
+}
+
+#page {
+  margin: 0 2%;
+}
+
+/* HEADER */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 5px 4px 0;
+}
+
+h1 {
+  font-weight: bolder;
+}
+
+nav img {
+  width: 10%;
+}
+
+nav ul {
+  margin: 0;
+  display: flex;
+  list-style-type: none;
+}
+
+nav li {
+  margin: 0;
+  padding: 50px 30px;
+}
+
+.boutton {
+  text-decoration: none;
+  color: black;
+}
+
+.boutton:hover {
+  color: #0065fc;
+}
+
+nav li:hover {
+  border-top: solid;
+  padding: 48px 30px;
+  color: #0065fc;
+}
+
+#solgan h1 {
+  font-size: 20px;
+}
+
+#recherche_section {
+  display: flex;
+  align-items: center;
+  height: 3em;
+}
+
+#recherche {
+  height: 100%;
+  border: 10px solid #f2f2f2;
+  border-width: 1px 0;
+  padding-left: 2%;
+  font-weight: bolder;
+  font-size: medium;
+}
+
+#recherche::placeholder{
+  color: black;
+}
+
+
+#localisation_marker {
+  display: flex;
+  background-color: #f2f2f2;
+  justify-content: center;
+  align-items: center;
+  width: 3em;
+  height: 100%;
+  border-radius: 20% 0% 0% 20%;
+}
+
+#recherche_boutton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0065fc;
+  width: 6em;
+  height: 100%;
+  padding: 0 1em 0 1em;
+  border-radius: 0px 10px 10px 0px;
+  color: rgb(253, 253, 253);
+  font-weight: 600;
+}
+
+#recherche_boutton_mini{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: #0065fc;
+  height: 100%;
+  padding: 0 1em 0 1em;
+  border-radius: 0px 10px 10px 0px;
+  color: rgb(253, 253, 253);
+  font-weight: 600;
+}
+
+#filtre {
+  display: flex;
+  width: 55%;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+#filtre-badges {
+  width: 78%;
+  display: flex;
+  padding-left: 3%;
+}
+
+.badge :hover{
+ color: blue; 
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+  border: 2px solid #f2f2f2;
+  border-radius: 25px;
+  margin-right: 5%;
+}
+.badge span {
+  font-weight: 700;
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.badge p {
+  margin: 0;
+}
+.badge i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #deebff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.fa-money-bill-wave,
+.fa-child,
+.fa-heart,
+.fa-heart,
+.fa-dog {
+  color: #0065fc;
+}
+
+#information {
+  display: flex;
+  align-items: center;
+  margin: 1% 0%;
+}
+
+#information_images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 100px;
+  border: 1px solid #deebff;
+  color: #0065fc;
+  margin: 0 1em 0 0;
+}
+
+
+/* HEBERGEMENT */
+
+#section_1 {
+  height: 80%;
+  width: 100%;
+  display: flex;
+}
+
+#section_1 a {
+  text-decoration: none;
+  color: black;
+}
+
+#hebergement h2 {
+ padding-bottom: 15px;
+}
+
+#hebergement h3{
+ font-size: medium;
+ margin: 0 0 5% 0;
+ line-height: 100%;
+}
+
+#hebergement {
+  width: 65%;
+  height: 100%;
+  background-color: #f2f2f2;
+  border-radius: 30px;
+  padding: 2% 2% 0 2%;
+}
+
+#hebergement_galerie ul {
+  width: 100%;
+  display: flex;
+  padding: 0;
+  margin-bottom: 3%;
+}
+
+#hebergement_galerie li {
+  list-style-type: none;
+  height: 194px;
+  width: 264px;
+  background-color: white;
+  border-radius: 20px;
+  border: 5px solid white;
+  box-shadow: 0px 0px 15px rgb(207, 207, 207);
+}
+
+#hebergement_galerie li:nth-child(2) {
+  margin: 0% 3%;
+}
+
+
+#hebergement_galerie li img {
+  position: relative;
+  object-fit: cover;
+  height: 55%;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.hebergement_description {
+  font-size: 13px;
+  margin: 0 0 0 5%;
+  height: 79px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+
+.hebergement_description p{
+  margin: 5% 0; 
+}
+
+.etoiles {
+  color: #0065fc;
+}
+
+#Auberge_de_la_Canebiere > .etoiles >:last-child {
+  color: #D9D9D9;
+}
+
+#Hôtel_les_Mouettes > .etoiles >:last-child {
+  color: #D9D9D9;
+}
+
+#Hôtel_de_la_mer > .etoiles >:nth-child(5) {
+  color: #D9D9D9;
+}
+#Hôtel_de_la_mer > .etoiles >:nth-child(4) {
+  color: #D9D9D9;
+}
+
+#Auberge_le_panier > .etoiles >:nth-child(5) {
+  color: #D9D9D9;
+}
+
+#afficher p{
+  font-weight: bolder;
+  font-size: large;
+  margin: 5% 0;
+}
+
+/* POPULAIRE */
+
+
+#section_populaire {
+  width: auto;
+  padding: 2% 2% 0% 2%;
+  background-color: #f2f2f2;
+  border-radius: 30px;
+  margin-left: 35px;
+}
+
+#section_populaire h2{
+  padding-bottom: 15px;
+}
+
+.fa-chart-line {
+ font-size: x-large;
+}
+
+#section_populaire_titre {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#section_populaire_carte {
+  height: 100%;
+  width: 100%;
+  padding-left: 0;
+  justify-content: space-evenly;
+  margin: 0;
+}
+
+.carte_populaire {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 7%;
+  height: 131px;
+  border-radius: 1em;
+  background-color: white;
+  border: 5px solid white;
+  box-shadow: 0px 0px 15px rgb(207, 207, 207);
+}
+
+.carte_populaire img {
+  position: relative;
+  object-fit: cover;
+  height: 100%;
+  width: 34%;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+
+.populaire_description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 123px;
+  line-height: 100%;
+  font-size: 13px;
+  margin: 0 0 0 15px;
+  width: 60%;
+}
+
+#section_populaire h3{
+  margin: 0;
+  padding: 5% 0;
+}
+
+#section_populaire p{
+  height: 71px;
+  padding: 5% 0;
+  margin:  0;
+}
+
+#section_populaire_carte>div i{
+  align-items: baseline;
+}
+
+.etoiles1{
+  color: #0065fc;
+}
+
+.populaire_description > .etoiles1 >:nth-child(5) {
+  color: #D9D9D9;
+}
+
+
+
+
+/* ACTIVITE */
+
+#section_2 {
+  margin: 5% 0;
+}
+#section_2 a {
+  text-decoration: none;
+  color: black;
+}
+#section_2 h2 {
+  margin: 0 0 3% 0;  
+  }
+
+#section_2 h3 {
+  margin: 8px 10px;
+  font-size: small;
+  font-weight: bolder;
+}
+
+#activité_galerie {
+  display: flex;
+  width: 100%;
+  height: 27em;
+}
+
+#galerie_colonneA{
+  width: 23%;
+}
+
+.galerie_colonneB_D {
+  width: 23%;
+  margin-left: 3%;
+}
+
+#galerie_colonneC {
+  width: 22%;
+  margin-left: 3%;
+}
+
+.activité {
+  height: 100%;
+}
+
+.grande_image {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px rgb(207, 207, 207);
+}
+
+.grande_image img {
+  object-fit: cover;
+  height: 90%;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.moyen_image {
+  height: 14em;
+  width: 100%;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px rgb(207, 207, 207);
+}
+
+.moyen_image img {
+  object-fit: cover;
+  height: 83%;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+#petite_image1  {
+  height: 12em;
+  width: 100%;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px rgb(207, 207, 207);
+  margin-bottom: 3em;
+  align-items: flex-end;
+}
+
+#petite_image1  img {
+  object-fit: cover;
+  height: 78%;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+#petite_image2  {
+  height: 12em;
+  width: 100%;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px rgb(207, 207, 207);
+  align-items: flex-end;
+}
+
+
+#petite_image2  img {
+  object-fit: cover;
+  height: 78%;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.très_petite_image {
+  height: 10em;
+  width: 100%;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px rgb(207, 207, 207);
+  margin-top: 3em;
+}
+
+.très_petite_image img {
+  object-fit: cover;
+  height: 75%;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+
+
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 2% 4%;
+  height: 30%;
+}
+
+footer h3 {
+  font-size: medium;
+  font-weight: 900;
+}
+
+.footer-info  {
+  width: 100%;
+}
+
+
+.footer-info ul {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-info li {
+  list-style-type: none;
+  margin-top: 2%;
+}
+
+.footer-info a{
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
+/*!!!!!!!!!!! MEDIA QUERIES !!!!!!!!!!!!! */
+
+
+@media screen and (max-width: 768px) {
+  #page {
+    margin: 0;
+  }
+
+  #section_0 {
+    padding: 3% 5%;
+  }
+  
+  nav {
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav img {
+    width: 30%;
+  }
+
+  nav ul {
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    justify-content: center;
+  }
+
+  nav li {
+    margin: 0;
+    padding: 25px 14%;
+    border-bottom: solid;
+    border-width: 3px;
+    color: #D9D9D9;
+    width: 22%;
+  }
+  nav li:hover {
+    border-top: none;
+    padding: 25px 14%;
+    color: #0065fc;
+  }
+
+  #recherche_boutton {
+    display: none;
+
+  }
+
+  #recherche_boutton_mini{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0065fc;
+    height: 100%;
+    padding: 0 1em 0 1em;
+    border-radius: 10px;
+    color: rgb(253, 253, 253);
+    font-weight: 600;
+  }
+
+  #filtre {
+    flex-direction: column;
+    align-items: normal;
+  }
+
+
+  #filtre-badges {
+    width: auto;
+    flex-wrap: wrap;
+  }
+
+  .badge {
+    margin-bottom: 10px;
+  }
+  
+  #section_1 {
+    flex-direction: column-reverse;
+  }
+
+  #hebergement h3{
+    margin: 2% 0;
+   }
+   
+  #section_populaire {
+    border-radius: 0;
+    margin-left: 0;
+    padding: 5%; 
+    height: auto
+  }
+
+  #section_populaire p{
+  margin-top: 3%;  
+  }
+
+  #hebergement p {
+    margin: 12px 0;
+  }
+
+  #hebergement {
+    width: auto;
+    background-color: white;
+    border-radius: 0;
+    padding: 5%;
+  }
+
+  #hebergement_galerie ul {
+    width: auto;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  #hebergement_galerie li {
+    width: auto;
+    margin-top: 16px;
+    margin-right: 0;
+  }
+
+  #hebergement_galerie li:nth-child(2) {
+    margin: 16px 0 0 0;
+  }
+  
+  #section_2 {
+    padding-left: 5%;
+  }
+
+  #activité_galerie {
+    flex-direction: column;
+    height: 100%;
+  }
+  #galerie_colonneA {
+    width: 95%;
+    height: 20%;
+  }
+  .galerie_colonneB_D {
+    width: 95%;
+    margin: 0;
+  }
+  #galerie_colonneC {
+    width: 95%;
+    margin: 0 0 5% 0%;
+  }
+
+  .grande_image {
+    height: 12em;
+    width: 100%;
+    margin-top: 5%
+  }
+  .grande_image img {
+    height: 75%;
+  }
+.moyen_image  {
+  height: 12em;
+  width: 100%;
+  margin-top: 5%
+}
+.moyen_image img {
+  height: 75%;
+
+}
+
+#petite_image1  {
+  height: 12em;
+  width: 100%;
+  margin-bottom: 5%
+}
+#petite_image1  img {
+  height: 75%;
+}
+
+#petite_image2  {
+  height: 12em;
+  width: 100%;
+  margin-top: 5%
+}
+#petite_image2  img {
+  height: 75%;
+}
+
+.très_petite_image {
+  height: 12em;
+  width: 100%;
+  margin-top: 5%
+}
+.très_petite_image img {
+  height: 75%;
+}
+
+
+#section_2 h3 {
+  margin: 2%; 
+}
+  footer {
+    margin: 0%;
+    flex-direction: column;
+  }
+
+  .footer-info {
+    width: auto;
+    margin-bottom: 8%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
